@@ -171,7 +171,7 @@ def unfollow():
         idn = otherid['user_name']
         idt = otherid['user_id']
         loop.append(idt)
-        if "750978" in idt:
+        if "881942" in idt:
             print(ttp+str(len(loop))+idn+ttp+" | "+idt+red+" Gagal Unfollow")
         else:
             scan = res.post("https://sestyc.com/sestyc/profile_init_other_script_93.php", headers={'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8','User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; A37f Build/LMY47V)','Host': 'sestyc.com','Connection': 'Keep-Alive','Accept-Encoding': 'gzip','Content-Length': '181'}, data=("session_key="+session_key_saya+"&my_user_id="+key_owner_saya+"&key_owner="+user_id_saya+"&user_id="+idt+"&")).text
